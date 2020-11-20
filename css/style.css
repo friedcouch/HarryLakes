@@ -1,3 +1,110 @@
+body {
+  font-family: "Sen", sans-serif;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #000000;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
+h1 {
+  font-family: "Comfortaa", sans-serif;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2%;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  flex-flow: column;
+  text-align: right;
+}
+
+nav a {
+  color: white;
+}
+
+header > * {
+  padding: 0;
+  margin: 16px 10px;
+}
+
+img {
+  width: 60%;
+  margin: 10% auto;
+  align-self: center;
+}
+
+div.main-wrapper {
+  position: relative;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+div.sub-wrapper {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+div.back {
+  transform: translateZ(-0.5px) scale(1.5);
+}
+
+div.img-container,
+div.front > div {
+  height: 100vh;
+}
+
+div.img-container {
+  display: flex;
+}
+
+div.front > div.empty {
+  height: 50vh;
+}
+
+div.title-container {
+  padding: 5% 0 0 60%;
+}
+
+h2 {
+  padding: 0 1rem;
+  width: fit-content;
+  position: relative;
+  color: black;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1920px) {
+  div.title-container {
+    padding: 10% 0 0 60%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  img {
+    width: 80%;
+  }
+
+  div.title-container {
+    padding: 30% 0 0 60%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  div.title-container {
+    padding: 40% 0 0 60%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
