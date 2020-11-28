@@ -26,7 +26,7 @@ a {
 }
 
 /* align header elements to the center on the vertical axis */
-header#navbar {
+header#navbar-header {
   position: fixed;
   width: 80%;
   top: 0;
@@ -41,23 +41,23 @@ header#navbar {
 }
 
 /* align h1 and img elements to the center on the vertical axis */
-header#navbar div {
+header#navbar-header div {
   display: flex;
   align-items: center;
   font-size: 0.6em;
 }
 
-header#navbar nav a {
+header#navbar-header nav a {
   margin: 0 0.3em;
 }
 
 /* make link of page the user is currently on bold */
-header#navbar nav a[href=""] {
+header#navbar-header nav a[href=""] {
   font-weight: 600;
 }
 
 /* change colour of links to visited pages */
-header#navbar a:visited {
+header#navbar-header a:visited {
   color: #333;
 }
 
@@ -333,7 +333,7 @@ section#country-gallery img {
 /* For mobile */
 @media only screen and (max-width: 640px) {
   /* make header width 100% */
-  header#navbar {
+  header#navbar-header {
     width: 100%;
   }
 
