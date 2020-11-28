@@ -5,52 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Sen&display=swap" rel="stylesheet">
+  <link rel="icon" href="icons/hl-logo-transparent-white.svg">
   <title>Gallery</title>
 </head>
 <body>
-  <header>
-    <div class="icon"><img src="/img/hl-logo.svg" alt="">
+  <header id="navbar">
+    <div>
+      <img class="icon" src="/icons/hl-logo.svg" alt="">
+      <h1>Gallery</h1>
     </div>
-    <h1>Harry Lakes</h1>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="">gallery</a>
+      <a href="about.html">about</a>
+    </nav>
   </header>
+
   <section>
-    <div class="middle">
-      <div class="container even">
-        <img src="img/japan_street.jpg" alt="">
-        <div id="japan" class="text">
-          <a href="gallery/japan.html">
-            <span class="front">Japan</span>
-            <span class="behind">Japan</span>
-          </a>
-        </div>
-        <div class="margin twenty"></div>
+    <div id="first" class="container even">
+      <img src="img/japan/0.jpg" alt="">
+      <div id="japan" class="text-container">
+        <a href="gallery/japan.html">
+          <span class="front">Japan</span>
+          <span class="behind">Japan</span>
+        </a>
       </div>
+    </div>
 
-      <div class="container odd">
-        <div class="margin twenty"></div>
-        <div id="germany" class="text">
-          <a href="">
-            <span class="front">Germany</span>
-            <span class="behind">Germany</span>
-          </a>
-        </div>
-        <img src="img/japan_street.jpg" alt="">
+    <div class="container odd">
+      <div id="georgia" class="text-container">
+        <a href="gallery/georgia.html">
+          <span class="front">Georgia</span>
+          <span class="behind">Georgia</span>
+        </a>
       </div>
+      <img src="img/georgia/7.jpg" alt="">
+    </div>
 
-      <div class="container even">
-        <img src="img/japan_street.jpg" alt="">
-        <div id="russia" class="text">
-          <a href="">
-            <span class="front">Russia</span>
-            <span class="behind">Russia</span>
-          </a>
-        </div>
-        <div class="margin twenty"></div>
-      </div>      
+    <div class="container even">
+      <img src="img/russia/1.jpg" alt="">
+      <div id="russia" class="text-container">
+        <a href="gallery/russia.html">
+          <span class="front">Russia</span>
+          <span class="behind">Russia</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="last" class="container odd">
+      <div id="thailand" class="text-container">
+        <a href="gallery/thailand.html">
+          <span class="front">Thailand</span>
+          <span class="behind">Thailand</span>
+        </a>
+      </div>
+      <img src="img/thailand/1.jpg" alt="">
     </div>
   </section>
+  
   <footer>
-    logo
+    <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+    <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+    <a href="#"><img src="icons/unsplash.svg" alt="Unsplash"></a>
+    <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+    <span>© 2020, Harry Lakes</span>
   </footer>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
