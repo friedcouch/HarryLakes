@@ -37,6 +37,7 @@ header#navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0.25rem 2.5rem rgba(150, 150, 150, 0.4);
 }
 
 /* align h1 and img elements to the center on the vertical axis */
