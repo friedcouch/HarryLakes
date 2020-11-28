@@ -1,3 +1,4 @@
+/* make body width 100%, and make it stick to 1920px when the screen gets too large */
 body {
   position: relative;
   font-family: "Sen", sans-serif;
@@ -24,6 +25,7 @@ a {
   text-decoration: none;
 }
 
+/* align header elements to the center on the vertical axis */
 header#navbar {
   position: fixed;
   width: 80%;
@@ -37,6 +39,7 @@ header#navbar {
   justify-content: space-between;
 }
 
+/* align h1 and img elements to the center on the vertical axis */
 header#navbar div {
   display: flex;
   align-items: center;
@@ -47,14 +50,17 @@ header#navbar nav a {
   margin: 0 0.3em;
 }
 
+/* make link of page the user is currently on bold */
 header#navbar nav a[href=""] {
   font-weight: 600;
 }
 
+/* change colour of links to visited pages */
 header#navbar a:visited {
   color: #333;
 }
 
+/* change the width of the logo to 3em */
 header .icon {
   margin: 0.3em;
   width: 3em;
@@ -68,12 +74,14 @@ footer {
   justify-content: center;
 }
 
+/* footer copyright text */
 footer span {
   width: 100%;
   text-align: center;
   margin-bottom: 1em;
 }
 
+/* footer icons */
 footer a img {
   margin-right: 0.5em;
   width: 1.6em;
@@ -98,6 +106,7 @@ section, body#index {
   justify-content: center;
 }
 
+/* body of index.html */
 body#index {
   background-image: url("/img/bg.jpg");
   background-position: right top;
@@ -109,15 +118,18 @@ body#index {
   text-shadow: 0.05em 0.05em 0.5em #222;
 }
 
+/* remove margin for index.html header */
 body#index header {
   margin: 0;
 }
 
+/* unique styles for index.html footer */
 body#index footer {
   margin: 1.6em 0;
   width: fit-content;
 }
 
+/* make icon smaller */
 body#index > img {
   width: 3em;
 }
@@ -136,17 +148,20 @@ body#index a {
   text-decoration: dotted underline;
 }
 
+/* about me page paragraph. add padding and justify text */
 section#about p {
   padding: 0 10%;
   text-align: justify;
 }
 
+/* about me page img */
 section#about img {
   width: 80%;
   margin: 0 10%;
   box-shadow: 0 0.25rem 3rem rgba(147, 144, 142, 0.5);
 }
 
+/* email button */
 section#about button {
   font-family: "Comfortaa", sans-serif;
   font-size: 1.2em;
@@ -161,6 +176,8 @@ section#about button a {
   color: #2f2f2f;
 }
 
+/* container for gallery.html
+ * contains image, large and small background text */
 .container {
   display: flex;
   width: 100%;
@@ -170,18 +187,22 @@ section#about button a {
   align-items: center;
 }
 
+/* make image the height of container
+ * z-index to cover large background text */
 .container img {
   height: 100%;
   width: auto;
   z-index: 1;
 }
 
+/* container text */
 .container div span {
   width: 10%;
   padding: 0 0.2em;
   color: #f0f0f0;
 }
 
+/* large background text */
 .container div span.behind {
   position: absolute;
   font-size: 9rem;
@@ -190,6 +211,7 @@ section#about button a {
   z-index: 0;
 }
 
+/* foreground text */
 .container div span.front {
   position: relative;
   color: #2f2f2f;
@@ -199,6 +221,7 @@ section#about button a {
   z-index: 1;
 }
 
+/* text container for large and small text */
 .container div.text-container {
   display: flex;
   flex-flow: row wrap;
@@ -206,35 +229,43 @@ section#about button a {
   width: 75%;
 }
 
+/* ODD containers are the 2nd, 4th, etc...
+ * EVEN containers are the 1st, 3rd, etc... */
 .container.odd div.text-container {
   justify-content: flex-end;
   margin-right: 1em;
 }
 
+/* make large bg text go behind the image a lil */
 .container.odd span.behind {
   right: -1em;
 }
 
+/* make small text have some spacing from image */
 .container.even span.front {
   margin-left: 1em;
 }
 
+/* make large bg text in .even container align to the left */
 .container.even span.behind {
   left: 0;
 }
 
+/* [country].html section, contains 2 column flexboxes */
 section#gallery {
   flex-flow: row wrap;
   width: 80%;
   justify-content: space-between;
 }
 
+/* [country].html container for photos, there are two of these containers */
 section#gallery div.img-container {
   display: flex;
   flex-flow: column wrap;
   width: 49%;
 }
 
+/* make image fill container */
 section#gallery img {
   width: 100%;
   height: auto;
@@ -244,25 +275,32 @@ section#gallery img {
   margin: 0 2% 4% 0;
 }
 
+/* For devices other than mobile */
 @media only screen and (min-width: 640px) {
+  /* align with main section with the same side margins */
   header, footer {
     margin-left: 10%;
     margin-right: 10%;
   }
 
+  /* make the container larger */
   .container {
     height: 13em;
   }
 
+  /* remove margin below last container */
   .container#last {
     margin-bottom: 0;
   }
 }
+/* For small medium devices */
 @media only screen and (min-width: 901px) {
+  /* make the container larger */
   .container {
     height: 17em;
   }
 
+  /* For desktop, add hover effect for gallery.html large background text */
   #japan span.behind:hover,
 #georgia span.behind:hover {
     color: #DB9595;
@@ -273,37 +311,50 @@ section#gallery img {
     color: #959CDB;
   }
 }
+/* For medium devices */
 @media only screen and (max-width: 1200px) {
+  /* align large background text in .odd container to the left
+  * originally, it was aligned to the right, causing it to overflow
+  * towards the left when the width is too small, and the first few letters
+  * are hdden. now, the first letter is visible due to positioning it against the left. */
   .container.odd span.behind {
     left: 0;
   }
 
+  /* position body such that the man is in view */
   body#index {
     background-position: 50% top;
   }
 }
+/* For mobile */
 @media only screen and (max-width: 640px) {
+  /* make header width 100% */
   header#navbar {
     width: 100%;
   }
 
+  /* position bg image towards left */
   body#index {
     background-position: 90%;
   }
 
+  /* make the stuff fill the width */
   section, section#gallery, section#about img, body#index {
     width: 100%;
   }
 
+  /* align index.html body items to the center */
   body#index {
     align-items: center;
     text-align: center;
   }
 
+  /* make padding smaller from 10% to 3% */
   section#about p {
     padding: 0 3%;
   }
 
+  /* make container fill the width of the parent, which is section (100% width) */
   .container {
     align-items: center;
     flex-flow: row wrap;
@@ -311,14 +362,17 @@ section#gallery img {
     width: 100%;
   }
 
+  /* reverse the wrap direction to make text in .odd containers appear below image */
   .odd {
     flex-flow: row wrap-reverse;
   }
 
+  /* make text container fill the width (100%) */
   .container div.text-container {
     width: 100%;
   }
 
+  /* move text down (if not part of the top of the bg text will be covered by img) */
   .container div span {
     width: 10%;
     padding: 0.3em;
