@@ -1,6 +1,3 @@
-sass/style.sass
-sass/save.sass
-sass/main.sass
+sass
+sass.sh
 css/style.css.map
-css/main.css
-save.html
