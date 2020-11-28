@@ -161,7 +161,7 @@ section#about img {
 
 /* shadow for section and img, except img in country-gallery.html */
 section, section#gallery img, section#about img {
-  box-shadow: 0 0.25rem 3rem rgba(147, 144, 142, 0.5);
+  box-shadow: 0 0.25rem 2.5rem rgba(90, 90, 90, 0.4);
 }
 
 /* email button */
@@ -255,26 +255,26 @@ section#about button a {
 }
 
 /* [country].html section, contains 2 column flexboxes */
-section#gallery {
+section#country-gallery {
   flex-flow: row wrap;
   width: 80%;
   justify-content: space-between;
 }
 
 /* [country].html container for photos, there are two of these containers */
-section#gallery div.img-container {
+section#country-gallery div.img-container {
   display: flex;
   flex-flow: column wrap;
   width: 49%;
 }
 
 /* make image fill container */
-section#gallery img {
+section#country-gallery img {
   width: 100%;
   height: auto;
 }
 
-section#gallery img {
+section#country-gallery img {
   margin: 0 2% 4% 0;
 }
 
@@ -342,7 +342,7 @@ section#gallery img {
   }
 
   /* make the stuff fill the width */
-  section, section#gallery, section#about img, body#index {
+  section, section#country-gallery, section#about img, body#index {
     width: 100%;
   }
 
