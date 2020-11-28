@@ -32,7 +32,13 @@ As mentioned above, the country gallery page houses the photographs Harry shot w
 6. Git & Github
     - Git is a version control system and Github is where I hosted the files for the website. I used Git Bash in VS Code to add, commit and push files to this Github repository, which was quite convenient.
 ## Resources
-1. [Boxicons](https://www.boxicons.com)
+1. [Boxicons](https://boxicons.com)
     - I used social media icons from this website.
-2. [Unsplash](https://www.unsplash.com)
+2. [Unsplash](https://unsplash.com)
     - I obtained stock images from this website. All the photos in the gallery were taken by [Egor Myznik](https://unsplash.com/@vonshnauzer).
+3. [W3Schools](https://w3schools.com)
+    - I used this website to learn more about HTML, CSS and JS. The code I used for the navigation bar is from [here](https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp) too.
+4. [CSS Tricks](https://css-tricks.com/)
+    - I learnt CSS from this website.
+5. [Stack Overflow](https://stackoverflow.com/)
+    - Which developer doesn't use Stack Overflow? I found solutions to various bugs through this website
